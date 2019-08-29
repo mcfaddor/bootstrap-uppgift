@@ -1,0 +1,116 @@
+.helper-grid-info {
+    background-color: #ececec;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.helper-grid-info:after {
+    content: "< 576px xs";
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .helper-grid-info:after {
+        content: "> 576px sm";
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .helper-grid-info:after {
+        content: "> 768px md";
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .helper-grid-info:after {
+        content: "> 992px lg";
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .helper-grid-info:after {
+        content: "> 1200px xl";
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#fff,#2A747A);
+}
+
+
+
+.topcontainer {
+    background-color: #2A747A;
+    height: 100px;
+}
+
+.container {
+    position: relative;
+    color: #A0F3FA;
+    height: 100px;
+}
+
+.navbar-brand {
+    color: rgba(rgba(163, 72, 140, 0.767));
+    font-size: 30px;
+}
+
+#navtext li a {
+    color: #A0F3FA;
+    font-weight: bold;
+    font-family: 'Amatic SC'; font-size: 30px;
+}
+
+.navbarbuttons {
+    color: #A0F3FA;
+    border: 1px solid #A0F3FA;
+    font-family: 'Amatic SC'; font-size: 22px;
+}
+
+.carousel-slide img {
+position: relative;
+    height: 700px;
+}
+
+.carousel-slide .gradient {
+position: absolute;
+    background: linear-gradient(#2A747A, #ffff);
+    height: 700px;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.5;
+   
+}
+
+
+.card-body p {
+    color: #4E777A;
+    font-weight: bold;
+    font-family: 'Amatic SC'; font-size: 15px;
+}
+
+.card-body h5 {
+    color: #4E777A;
+    font-weight: bold;
+    font-family: 'Amatic SC'; font-size: 25px;
+}
+
+.card-img-top {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.bottomcontainer {
+    background-color: #2A747A;
+    height: 100px;
+}
