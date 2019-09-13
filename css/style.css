@@ -1,12 +1,3 @@
-.helper-grid-info {
-    background-color: white;
-    height: 30px;
-}
-
-.helper-grid-info:after {
-    content: "< 576px xs";
-}
-
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -54,8 +45,6 @@
 .navbar-brand {
     color: #A0F3FA;
     font-size: 4vh;
-   
-
 }
 
 #navtext li a {
@@ -162,7 +151,6 @@
     text-align: center;
     height: 10vh;
     width: 100%;
-
 }
 
 .navbarfooter {
@@ -176,7 +164,6 @@
 #footer {
     background-color: #2A747A;
     height: 10vh;
-   
 }
 
 
@@ -191,7 +178,6 @@
 
 
 #registration {
-    
     min-height: calc(105vh - 73px - 67px);
     position: relative;
     display: flex;
@@ -226,7 +212,6 @@
 
 
 #login {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,11 +234,9 @@
 /* PROFILE */
 
 .row {
- 
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 
