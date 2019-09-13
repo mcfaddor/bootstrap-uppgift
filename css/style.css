@@ -1,7 +1,6 @@
 .helper-grid-info {
-    background-color: #ececec;
+    background-color: white;
     height: 30px;
-    margin-bottom: 10px;
 }
 
 .helper-grid-info:after {
@@ -40,77 +39,226 @@
 }
 
 
-body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(#fff,#2A747A);
-}
 
 
+/* NAVBAR */
 
-.topcontainer {
+#navtext {
     background-color: #2A747A;
-    height: 100px;
+    position: fixed;
+    color: #A0F3FA;
+    z-index: 100;
 }
 
-.container {
-    position: relative;
-    color: #A0F3FA;
-    height: 100px;
-}
 
 .navbar-brand {
-    color: rgba(rgba(163, 72, 140, 0.767));
-    font-size: 30px;
+    color: #A0F3FA;
+    font-size: 4vh;
+   
+
 }
 
 #navtext li a {
     color: #A0F3FA;
     font-weight: bold;
-    font-family: 'Amatic SC'; font-size: 30px;
+    font-family: 'Amatic SC'; font-size: 4vh;
 }
 
 .navbarbuttons {
+    display: flex;
+    text-align: center;
     color: #A0F3FA;
     border: 1px solid #A0F3FA;
-    font-family: 'Amatic SC'; font-size: 22px;
+    font-family: 'Amatic SC'; font-size: 2vh;
 }
 
-.carousel-slide img {
-position: relative;
-    height: 700px;
+
+.navbar-toggler-icon {
+    margin-top: 1vh;
+    color:  #A0F3FA;
+    font-size: 2vh;
 }
 
-.carousel-slide .gradient {
-position: absolute;
-    background: linear-gradient(#2A747A, #ffff);
-    height: 700px;
+
+
+
+#overview_slider img {
+    height: 90vh;
     width: 100%;
-    z-index: 2;
-    opacity: 0.5;
-   
+    z-index: -1;
 }
 
+#overview-a .gradient_uppe {
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(180deg, #2A747A 50%, rgba(189,188,184,0) 100%);
+    z-index: 2;
+}
+
+#cards .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #2A747A 15%, rgba(189,188,184,0) 100%, #2A747A 10%, rgba(189,188,184,0) 100%);
+    z-index: 0;
+}
+
+#overview-a .gradient_nere {
+    position: absolute;
+    margin-top: 60vh;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(180deg, rgba(189,188,184,0) 15%, #2A747A 100%, rgba(189,188,184,0) 100%);
+    z-index: 6;
+}
+
+
+
+.carousel-control-prev, .carousel-control-next {
+    color:#000;
+    z-index: 4
+}
+
+
+
+/*CARDS */
+
+
+#cards {
+    position: relative;
+    z-index: 4;
+    padding-top: 10vh;
+}
 
 .card-body p {
     color: #4E777A;
     font-weight: bold;
-    font-family: 'Amatic SC'; font-size: 15px;
+    font-family: 'Amatic SC'; font-size: 2vh;
 }
 
 .card-body h5 {
     color: #4E777A;
     font-weight: bold;
-    font-family: 'Amatic SC'; font-size: 25px;
+    font-family: 'Amatic SC'; font-size: 3vh;
 }
 
 .card-img-top {
-    max-width: 100%;
-    max-height: 100%;
+    object-fit: cover;
+    height: 20vh;
+    width: 100%;
+}
+
+ #cards {
+    display: grid;
+    margin-bottom: 10vh;
+} 
+
+
+/* FOOTER */
+
+.bottomcontainer {
+    position: relative;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+
+}
+
+.navbarfooter {
+    justify-content: center;
+}
+
+.navbar a:hover {
+    color: #A0F3FA;
+}
+
+#footer {
+    background-color: #2A747A;
+    height: 10vh;
+   
 }
 
 
-.bottomcontainer {
+
+/* REGISTRATION */
+
+.button {
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+}
+
+
+#registration {
+    
+    min-height: calc(105vh - 73px - 67px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A0F3FA;
+    font-weight: bold;
+    font-family: 'Amatic SC'; font-size: 3vh;
+    padding: 10%;
+    z-index: 20;
+    
+}
+
+#registration a:hover {
     background-color: #2A747A;
-    height: 100px;
+}
+
+.registerform {
+    background-color: #2A747A;
+    border-radius: 5%;
+}
+
+
+.checkbox {
+    display: flex;
+    width: 10vh;
+}
+
+
+
+/* LOGIN */
+
+
+#login {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Amatic SC'; 
+    padding: 10%;
+}
+
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #2A747A 15%, rgba(189,188,184,0) 100%, #2A747A 10%, rgba(189,188,184,0) 100%);
+    z-index: 0;
+}
+
+
+
+/* PROFILE */
+
+.row {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.card-profilecard-img-top {
+    object-fit: cover;
+    height: 40vh;
+    width: 100%;
 }
